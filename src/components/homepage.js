@@ -28,12 +28,6 @@ function Home() {
           <li>
             <a>About us</a>
           </li>
-          <li>
-            <a>Gallery</a>
-          </li>
-          <li>
-            <a>Sign In/Sign Up</a>
-          </li>
         </ul>
       </nav>
 

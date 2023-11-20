@@ -22,7 +22,7 @@ body{
 /* Homepage */
 
 .homepagenavbar {
-  min-width: 900px;
+  width: 100%;
   background-color:rgb(255, 255, 253);
   padding:0px;
   margin: 0;
@@ -58,16 +58,16 @@ body{
   font-size: 30px;
   font-style: italic;
 position: absolute;
-left: 1100px;
-top: 1400px;
+left: 58%;
+top: 153%;
 }
 
 .homepageorganizer p{
   font-size: 30px;
   font-style: italic;
 position: absolute;
-left: 200px; 
-top: 2450px;
+left: 10%; 
+top: 260%;
 }
 
 button {
@@ -115,8 +115,8 @@ button {
 
  #homepagebooknow{
   position: absolute;
-  left: 1275px; 
-  top: 1650px;
+  left: 67%; 
+  top: 177%;
 }
 
 #homepagebooknow2{
