@@ -52,8 +52,8 @@ function Home() {
               objectFit: "cover",
               width: "100%",
               height: "auto",
-              maxWidth: "600px",
-              paddingLeft: "100px",
+              maxWidth: "29%", //600px
+              paddingLeft: "6%", //100px
             }}
             alt="Login Block"
           />
@@ -73,8 +73,8 @@ function Home() {
               objectFit: "cover",
               width: "100%",
               height: "auto",
-              maxWidth: "600px",
-              paddingRight: "200px",
+              maxWidth: "29%",//600px
+              paddingRight: "8%",//10px
             }}
             align="right"
             alt="Organizer Block"
@@ -89,8 +89,9 @@ function Home() {
       </main>
 
       {/* Banner */}
-      <div id="homepagebanner"></div>
-    </div>
+      
+    
+   </div>
   );
 }
 

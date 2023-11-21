@@ -50,8 +50,8 @@ function Login() {
 
 
     return (
-        
-        <div className="auth-form-container" >
+        <div className="cont">
+        <div className="signcontainer" >
             <h2>Login</h2>
             <form action="POST" className="login-form">
                 <input type="text" onChange={(e) => { setUsername(e.target.value) }} placeholder="Username"  />
@@ -65,7 +65,7 @@ function Login() {
 
             <Link to="/orgsignup">Signup Page</Link>
 
-        </div>
+        </div></div>
     )
 }
 

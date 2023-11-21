@@ -60,17 +60,18 @@ function OrgHome() {
 
     return (
         <div>
-            <h1>Hello {location.state.id} and welcome to the home</h1>
+            <img style={{ width: "200px" }} src="./images/logo.jpg" alt="A hoe" />
+            <h1 className="orgneweventhref">Hello {location.state.id} and welcome to the home</h1>
 
-            <div className="sidenav">
+            <div className="orghomesidenav">
                 <button onClick={() => uhome(username)}>Home</button>
                 <button onClick={() => ubook(username)}>Bookings</button>
                 <button onClick={() => uprofile(username)}>Profile</button>
                 <button onClick={() => ulogout()}>Logout</button>
             </div>
-
-            <div className="container">
-                <h2>Upcoming Booked Events</h2>
+            <h2 className="orgneweventhref">Upcoming Booked Events</h2>
+            <div className="orghomecontainer">
+                
                 {data.map((item) => (
                     <div key={item._id}>
                         <button>

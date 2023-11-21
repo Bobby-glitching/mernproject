@@ -104,7 +104,8 @@ function OrgHome() {
 
     return (
         <div>
-            <h1>Hello {location.state.id} and welcome to the home</h1>
+            <img style={{ width: "200px" }} src="./images/logo.jpg" alt="A hoe" />
+            <h1 className="orgneweventhref">Hello {location.state.id} and welcome to the home</h1>
 
             <div className="orghomesidenav">
                 <button onClick={() => uhome(username)}>Home</button>

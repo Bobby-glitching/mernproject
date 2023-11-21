@@ -36,24 +36,22 @@ function OrgHome() {
         console.log("Updated Data:", data);
     }, [data]);
 
-    async function oevent(username) {
-        history("/orgnewevent", { state: { id: username } });
+    async function uhome(username) {
+        history("/userhome", { state: { id: username } });
     }
 
-    async function ohome(username) {
-        history("/orghome", { state: { id: username } });
+    async function ubook(username) {
+        history("/userbooking", { state: { id: username } });
     }
 
-    async function obook(username) {
-        history("/orgbooking", { state: { id: username } });
+    async function uprofile(username) {
+        history("/userprofile", { state: { id: username } });
     }
 
-    async function oprofile(username) {
-        history("/orgprofile", { state: { id: username } });
-    }
-    async function ologout() {
+    async function ulogout() {
         history("/");
     }
+
 
     const formatDate = (dateString) => {
         const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
@@ -62,25 +60,26 @@ function OrgHome() {
 
     return (
         <div>
-            <h1>Hello {location.state.id} and welcome to the home</h1>
+            <img style={{ width: "200px" }} src="./images/logo.jpg" alt="A hoe" />
+            <h1 className="orgneweventhref">Hello {location.state.id} and welcome to the Home tab</h1>
 
-            <div className="sidenav">
-                <button onClick={() => ohome(username)}>Home</button>
-                <button onClick={() => oevent(username)}>New Event</button>
-                <button onClick={() => obook(username)}>Bookings</button>
-                <button onClick={() => oprofile(username)}>Profile</button>
-                <button onClick={() => ologout()}>Logout</button>
+            <div className="orghomesidenav">
+            <button onClick={() => uhome(username)}>Home</button>
+            <button onClick={() => ubook(username)}>Bookings</button>
+                <button onClick={() => uprofile(username)}>Profile</button>
+                <button onClick={() => ulogout()}>Logout</button>
             </div>
-
-            <div className="container">
-                <h2>Upcoming Events</h2>
+            <h2 className="orgneweventhref">Upcoming Events</h2>
+            <div className="orghomecontainer">
+                
                 
                     <div >
+                        <button>
                       
                             <div>Nam         : {data.name}</div>
                             <div>Username    : {data.username}</div>
                             <div>Email       : {data.email}</div>
-                            <div>Password    : {data.password}</div>
+                            <div>Password    : {data.password}</div></button>
                     </div>
                 
                 {data.length === 0 && <p>No data available</p>}

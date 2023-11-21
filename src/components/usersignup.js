@@ -42,7 +42,8 @@ function Login() {
 
 
     return (
-        <div className="auth-form-container">
+        <div className="cont">
+        <div className="signcontainer">
 
             <h1>Signup</h1>
 
@@ -61,7 +62,7 @@ function Login() {
 
             <Link to="/userlogin">Login Page</Link>
 
-        </div>
+        </div></div>
     )
 }
 
