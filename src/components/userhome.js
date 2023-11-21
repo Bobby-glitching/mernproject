@@ -17,7 +17,7 @@ function OrgHome() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.post("http://localhost:8000/userhome");
+            const response = await axios.post("https://violetapi.onrender.com/userhome");
 
             if (response.data.success) {
                 console.log("Login successful");
@@ -81,7 +81,7 @@ function OrgHome() {
         
         try {
             
-            const response = await axios.post("http://localhost:8000/updateTickets", {
+            const response = await axios.post("https://violetapi.onrender.com/updateTickets", {
                 username,
                 selectedEvent,
                 ticketsRequired,selectedcapacity,

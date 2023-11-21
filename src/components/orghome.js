@@ -15,7 +15,7 @@ function OrgHome() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.post("http://localhost:8000/orghome", {
+            const response = await axios.post("https://violetapi.onrender.com/orghome", {
                 username,
             });
 

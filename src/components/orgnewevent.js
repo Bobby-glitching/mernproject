@@ -41,7 +41,7 @@ function OrgNewEvent() {
 
         try {
 
-            await axios.post("http://localhost:8000/orgnewevent", {
+            await axios.post("https://violetapi.onrender.com/orgnewevent", {
                 username, eventName, venue,date, price, capacity, booked, aboutEvent
             })
                 .then(res => {
